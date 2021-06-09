@@ -24,7 +24,7 @@ if(req.url == '/'){
         //     console.log("File updated")
         // })
        const realData =  arrData.map((val) => repData(homepage, val) ).join("")
-       console.log(realData)
+       res.write(realData)
   
     })
     .on("end", (err) =>{
